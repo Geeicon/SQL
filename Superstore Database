@@ -35,12 +35,12 @@ SELECT SUM(price)
 FROM superstore;
 
 #Show a statistic about the price for items in the category "Kitchen Supplies"
-SELECT SUM(price), category "Kitchen Supplies"
+SELECT SUM(price)
 FROM superstore
 WHERE category = 'Kitchen Supplies';
 
 #Show a statistic about the price for items in the category "Kitchen Supplies"
-SELECT AVG(price), category 'Kitchen Supplies'
+SELECT AVG(price)
 FROM superstore
 WHERE category = 'Kitchen Supplies';
 
