@@ -1,0 +1,12 @@
+/** Favorite_books:
+The Holy Bible (10)
+I Believe in Visions (9)
+The Holy Spirit and His Gifts (8)
+**/
+
+CREATE TABLE Favorite_books (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER);
+
+INSERT INTO Favorite_books VALUES (1, "The Holy Bible", 10);
+INSERT INTO Favorite_books VALUES (2, "I Believe in Visions", 9);
+INSERT INTO Favorite_books VALUES (3, "The Holy Spirit and His Gifts", 8);
+SELECT * FROM Favorite_books;
