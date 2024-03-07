@@ -1,0 +1,27 @@
+Create your own store! Your store should sell one type of things, like clothing or bikes, whatever you want your store to specialize in. You should have a table for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store. You should sell at least 15 items, and use select statements to order your items by price and show at least one statistic about the items.
+
+CREATE TABLE Geeicon (item_id INTEGER PRIMARY KEY, item_name TEXT, category TEXT,
+price NUMERIC,stock_quantity INTEGER); 
+INSERT INTO Geeicon VALUES (1, "Leather Bags", "Accesories", 49.99, 50);
+INSERT INTO Geeicon VALUES (2, "Leggings", "Athleisure", 30.00, 60);
+INSERT INTO Geeicon VALUES (3, "Eaarings", "Jewlery", 11.99,31);
+INSERT INTO Geeicon VALUES (4, "Denim Jackets", "Outterwear", 69.99, 20);
+INSERT INTO Geeicon VALUES (5, "Sneakers", "Footwear", 55.00, 60);
+INSERT INTO Geeicon VALUES (6, "Leather Belts", "Accesories", 29.99, 25);
+INSERT INTO Geeicon VALUES (7, "Body Suits", "Athleisure", 52.67, 35);
+INSERT INTO Geeicon VALUES (8, "Necklaces", "Jwelery", 17.99, 36);
+INSERT INTO Geeicon VALUES (9, "Cardigans", "Outterwaer", 60.00, 56);
+INSERT INTO Geeicon VALUES (10, "Rain Boots", "Footwear", 59.99, 40);
+INSERT INTO Geeicon VALUES (11, "Body Chain", "Accesories", 33.99, 42);
+INSERT INTO Geeicon VALUES (12, "Fanny Packs", "Athleisure", 20.00, 27);
+INSERT INTO Geeicon VALUES (13, "Bangles", "Jewlery", 15.99, 21);
+INSERT INTO Geeicon VALUES (14, "Puffer Coats", "Outterwaer", 80.00, 33);
+INSERT INTO Geeicon VALUES (15, "Winter Boots", "Footwear", 75.99, 45);
+
+SELECT * FROM Geeicon;
+
+SELECT item_name, price FROM Geeicon ORDER BY price desc;
+
+SELECT SUM(price) FROM Geeicon;
+
+SELECT SUM(price) FROM Geeicon WHERE category = "Jewlery";
